@@ -3,65 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Decor Garage - Elegant Mirrors & Home Decor</title>
+    <title>The Decor Garage - Premium Mirrors & Home Decor by Vaayu</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="images/logo.png" alt="The Decor Garage">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="The Decor Garage">
+                <div class="logo-text">
+                    <h1>The Decor Garage</h1>
+                    <p>BY VAAYU</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="icon">🔍</a>
+                <a href="#" class="icon">❤️</a>
+                <a href="#" class="icon">🛒</a>
+            </div>
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#" class="cart-icon">🛒 Cart (0)</a></li>
-        </ul>
     </nav>
 
-    <section class="hero">
-        <h1>Transform Your Space</h1>
-        <p>Discover handpicked mirrors that reflect elegance and style</p>
-        <a href="shop.html" class="cta-button">Shop Mirrors</a>
-    </section>
-
-    <section class="featured">
-        <h2 class="section-title">Featured Mirrors</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">Product Image</div>
-                <h3>Classic Round Mirror</h3>
-                <p class="price">₹4,999</p>
-                <a href="#" class="cta-button">View Details</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">PREMIUM HOME DECOR</p>
+                <h1 class="hero-title">Elevate Your<br><span class="accent">Living Spaces</span></h1>
+                <p class="hero-description">Discover our curated collection of mirrors, vanity units, and glass decorative pieces that bring sophistication and elegance to your home.</p>
+                <div class="hero-buttons">
+                    <a href="#shop" class="btn btn-primary">Explore Collection</a>
+                    <a href="#about" class="btn btn-secondary">Our Story</a>
+                </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">Product Image</div>
-                <h3>Vintage Wall Mirror</h3>
-                <p class="price">₹6,499</p>
-                <a href="#" class="cta-button">View Details</a>
-            </div>
-            <div class="product-card">
-                <div class="product-image">Product Image</div>
-                <h3>Modern Geometric Mirror</h3>
-                <p class="price">₹5,799</p>
-                <a href="#" class="cta-button">View Details</a>
+            <div class="hero-image">
+                <img src="images/hero-mirrors.png" alt="Premium Mirrors">
             </div>
         </div>
     </section>
 
-    <section class="about">
-        <h2 class="section-title">About The Decor Garage</h2>
-        <p>We curate elegant mirrors and home decor pieces that transform ordinary spaces into extraordinary sanctuaries. Each piece is carefully selected to bring sophistication and charm to your home.</p>
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Free Shipping</h3>
+            <p>On orders above ₹5,000</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Quality Assured</h3>
+            <p>Premium craftsmanship</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">↩️</div>
+            <h3>Easy Returns</h3>
+            <p>30-day return policy</p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 The Decor Garage by Vaayu. All rights reserved.</p>
-        <p>
-            <a href="#">Instagram</a> | 
-            <a href="#">Facebook</a> | 
-            <a href="contact.html">Contact Us</a>
-        </p>
+    <!-- Categories -->
+    <section class="categories">
+        <p class="section-subtitle">BROWSE BY CATEGORY</p>
+        <h2 class="section-title">Shop Our Collections</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/category-mirrors.jpg" alt="Mirrors">
+                <div class="category-overlay">
+                    <h3>Mirrors</h3>
+                    <p>24 Products</p>
+                    <a href="#" class="btn-link">Shop Now →</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/category-vanity.jpg" alt="Vanity Units">
+                <div class="category-overlay">
+                    <h3>Vanity Units</h3>
+                    <p>18 Products</p>
+                    <a href="#" class="btn-link">Shop Now →</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/category-glass.jpg" alt="Glass Decor">
+                <div class="category-overlay">
+                    <h3>Glass Decor</h3>
+                    <p>36 Products</p>
+                    <a href="#" class="btn-link">Shop Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <p class="section-subtitle">HANDPICKED FOR YOU</p>
+        <h2 class="section-title">Featured Products</h2>
+        <a href="#" class="view-all">View All Products →</a>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <span class="badge bestseller">BESTSELLER</span>
+                <img src="images/product-1.jpg" alt="Aurelia Round Mirror">
+                <h3>Aurelia Round Mirror</h3>
+                <div class="rating">⭐⭐⭐⭐⭐ (124)</div>
+                <p class="price">₹24,999 <span class="original-price">₹29,999</span></p>
+            </div>
+            <div class="product-card">
+                <span class="badge new">NEW</span>
+                <img src="images/product-2.jpg" alt="Serenity Arch Floor Mirror">
+                <h3>Serenity Arch Floor Mirror</h3>
+                <div class="rating">⭐⭐⭐⭐ (87)</div>
+                <p class="price">₹45,999</p>
+                <button class="btn btn-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <span class="badge sale">SALE</span>
+                <img src="images/product-3.jpg" alt="Marble Elegance Vanity">
+                <h3>Marble Elegance Vanity</h3>
+                <div class="rating">⭐⭐⭐⭐ (56)</div>
+                <p class="price">₹89,999 <span class="original-price">₹99,999</span></p>
+            </div>
+            <div class="product-card">
+                <img src="images/product-4.jpg" alt="Luxe Double Vanity Unit">
+                <h3>Luxe Double Vanity Unit</h3>
+                <div class="rating">⭐⭐⭐⭐ (42)</div>
+                <p class="price">₹1,49,999</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <p class="section-subtitle">CUSTOMER LOVE</p>
+        <h2 class="section-title">What Our Customers Say</h2>
+        
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"The Aurelia mirror transformed my living room. Exceptional quality and the brass finish is stunning."</p>
+                <p class="customer-name">Priya Sharma</p>
+                <p class="customer-location">Mumbai</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Outstanding service and beautiful products. The vanity unit exceeded our expectations."</p>
+                <p class="customer-name">Rajesh Mehta</p>
+                <p class="customer-location">Delhi</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Every piece from The Decor Garage adds elegance to my home. Highly recommend!"</p>
+                <p class="customer-name">Ananya Patel</p>
+                <p class="customer-location">Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Transform Your Home Today</h2>
+        <p>Sign up for exclusive offers, design inspiration, and new arrivals.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="The Decor Garage">
+                    <h3>The Decor Garage</h3>
+                    <p>BY VAAYU</p>
+                </div>
+                <p class="footer-desc">Curating premium home decor that transforms your spaces into elegant sanctuaries. Quality craftsmanship meets timeless design.</p>
+                <div class="social-icons">
+                    <a href="#">📷</a>
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">Mirrors</a></li>
+                    <li><a href="#">Vanity Units</a></li>
+                    <li><a href="#">Glass Decor</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Get in Touch</h4>
+                <ul>
+                    <li>✉️ hello@thedecorgarage.com</li>
+                    <li>📞 +91 98765 43210</li>
+                    <li>📍 123 Design District, Mumbai, Maharashtra 400001</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 The Decor Garage by VAAYU. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
