@@ -105,17 +105,31 @@ body {
 .nav-icons {
     display: flex;
     gap: 1.5rem;
-    font-size: 1.3rem;
+    align-items: center;
 }
 
 .nav-icons .icon {
     cursor: pointer;
     transition: transform 0.3s;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons .icon img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
 }
 
 .nav-icons .icon:hover {
     transform: scale(1.15);
+}
+
+.nav-icons .icon img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
 }
 
 /* Hero Section */
@@ -228,8 +242,16 @@ body {
 }
 
 .feature-icon {
-    font-size: 3.5rem;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon img {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
 }
 
 .feature-card h3 {
