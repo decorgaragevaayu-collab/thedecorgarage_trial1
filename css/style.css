@@ -139,17 +139,29 @@ body {
 
 /* Hero Section */
 .hero {
-    background: var(--light-cream);
-    padding: 4rem 5% 5rem;
+    background-image: url('../images/hero-mirrors.png');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    background: linear-gradient(to right, rgba(250, 247, 242, 0.95) 0%, rgba(250, 247, 242, 0.85) 50%, rgba(250, 247, 242, 0.3) 100%);
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 5rem 5%;
 }
 
 .hero-content {
     max-width: 1400px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: center;
+    width: 100%;
 }
 
 .hero-text {
@@ -171,6 +183,7 @@ body {
     margin-bottom: 2rem;
     color: var(--text-dark);
     font-family: Georgia, serif;
+    max-width: 600px;
 }
 
 .hero-title .accent {
@@ -183,6 +196,7 @@ body {
     color: var(--text-gray);
     margin-bottom: 3rem;
     line-height: 1.75;
+    max-width: 550px;
 }
 
 .hero-buttons {
@@ -232,11 +246,6 @@ body {
     color: var(--white);
 }
 
-.hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
 
 /* Features */
 .features {
