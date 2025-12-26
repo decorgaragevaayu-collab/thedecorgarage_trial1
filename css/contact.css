@@ -1,0 +1,356 @@
+/* Contact Page Specific Styles */
+
+/* Contact Hero */
+.contact-hero {
+    background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
+    padding: 5rem 5% 4rem;
+    text-align: center;
+}
+
+.contact-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-hero .hero-subtitle {
+    color: var(--primary-gold);
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.contact-hero .hero-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    font-family: Georgia, serif;
+}
+
+.contact-hero .hero-description {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+/* Free Consultation Banner */
+.consultation-banner {
+    background: linear-gradient(135deg, var(--primary-gold) 0%, #B88546 100%);
+    padding: 3rem 5%;
+}
+
+.consultation-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.consultation-text {
+    flex: 1;
+}
+
+.consultation-text h2 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.consultation-text p {
+    color: rgba(255,255,255,0.95);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.consultation-btn {
+    background: var(--white);
+    color: var(--primary-gold);
+    white-space: nowrap;
+    padding: 1.2rem 3rem;
+    font-weight: 700;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.consultation-btn:hover {
+    background: var(--primary-brown);
+    color: var(--white);
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    padding: 5rem 5%;
+    background: var(--white);
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: var(--light-cream);
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.info-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(200, 150, 81, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--primary-gold);
+}
+
+.info-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-icon {
+    background: rgba(37, 211, 102, 0.15);
+    color: #25D366;
+}
+
+.info-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.info-card a {
+    color: var(--primary-gold);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.info-card a:hover {
+    color: var(--primary-brown);
+}
+
+.info-card p {
+    color: var(--text-gray);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
+
+.info-card p strong {
+    color: var(--text-dark);
+}
+
+.info-subtext {
+    font-size: 0.9rem !important;
+    color: var(--text-gray);
+    margin-top: 0.75rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 5rem 5%;
+    background: var(--light-cream);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-family: Georgia, serif;
+}
+
+.form-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--cream);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: inherit;
+    background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 3px rgba(200, 150, 81, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.submit-btn svg {
+    transition: transform 0.3s;
+}
+
+.submit-btn:hover svg {
+    transform: translateX(5px);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 5rem 5%;
+    background: var(--white);
+}
+
+.faq-section .section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-family: Georgia, serif;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.faq-item {
+    background: var(--light-cream);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-gold);
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .consultation-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consultation-btn {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-info-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .consultation-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-title {
+        font-size: 2.2rem;
+    }
+}
