@@ -1,0 +1,131 @@
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="The Decor Garage">
+            <div class="logo-text">
+                <h1>The Decor Garage</h1>
+                <p>BY VAAYU</p>
+            </div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" id="nav-home">Home</a></li>
+            <li><a href="#shop" id="nav-shop">Shop</a></li>
+            <li><a href="about.html" id="nav-about">About</a></li>
+            <li><a href="Contact.html" id="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#" class="icon"><img src="images/Search.png" alt="Search"></a>
+            <a href="#" class="icon"><img src="images/Heart.png" alt="Wishlist"></a>
+            <a href="#" class="icon"><img src="images/Shopping cart.png" alt="Cart"></a>
+            <a href="#" class="icon icon-user" id="accountIcon">
+                <img src="images/User.png" alt="Account" id="accountIconImg">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Account Modal -->
+<div id="accountModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        
+        <!-- Login/Register Tabs -->
+        <div class="auth-tabs">
+            <button class="tab-btn active" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="register">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-tab" class="tab-content active">
+            <h2>Welcome Back</h2>
+            <p class="tab-subtitle">Login to your account</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Login</button>
+            </form>
+            <div class="social-login">
+                <p>Or continue with</p>
+                <div class="social-buttons">
+                    <button class="btn-social google">
+                        <span>🔵</span> Google
+                    </button>
+                    <button class="btn-social facebook">
+                        <span>📘</span> Facebook
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-tab" class="tab-content">
+            <h2>Create Account</h2>
+            <p class="tab-subtitle">Join The Decor Garage family</p>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email Address</label>
+                    <input type="email" id="register-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <label class="terms-checkbox">
+                    <input type="checkbox" id="terms" required>
+                    <span>I agree to the <a href="#">Terms & Conditions</a></span>
+                </label>
+                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+            </form>
+        </div>
+
+        <!-- Logged In View -->
+        <div id="loggedin-view" class="tab-content" style="display: none;">
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="images/User.png" alt="User Avatar">
+                </div>
+                <h3 id="user-name">Welcome Back!</h3>
+                <p id="user-email"></p>
+            </div>
+            <div class="account-menu">
+                <a href="#" class="menu-item">
+                    <span>👤</span> My Profile
+                </a>
+                <a href="#" class="menu-item">
+                    <span>📦</span> My Orders
+                </a>
+                <a href="#" class="menu-item">
+                    <span>❤️</span> Wishlist
+                </a>
+                <a href="#" class="menu-item">
+                    <span>📍</span> Addresses
+                </a>
+                <a href="#" class="menu-item">
+                    <span>⚙️</span> Settings
+                </a>
+                <button id="logoutBtn" class="btn btn-secondary btn-full">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>

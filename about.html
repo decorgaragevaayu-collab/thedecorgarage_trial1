@@ -6,34 +6,11 @@
     <title>About Us - The Decor Garage</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/account-modal.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="The Decor Garage">
-                <div class="logo-text">
-                    <h1>The Decor Garage</h1>
-                    <p>BY VAAYU</p>
-                </div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-icons">
-                <a href="#" class="icon"><img src="images/Search.png" alt="Search"></a>
-                <a href="#" class="icon"><img src="images/Heart.png" alt="Wishlist"></a>
-                <a href="#" class="icon"><img src="images/Shopping cart.png" alt="Cart"></a>
-                <a href="#" class="icon icon-user" id="userIcon">
-                    <img src="images/Log in.png" alt="Login" id="userIconImg">
-                </a>
-            </div>
-        </div>
-    </nav>
+    <!-- Navigation Placeholder -->
+    <div id="navbar-placeholder"></div>
 
     <!-- Hero Section -->
     <section class="about-hero">
@@ -129,94 +106,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="The Decor Garage">
-                    <h3>The Decor Garage</h3>
-                    <p>BY VAAYU</p>
-                </div>
-                <p class="footer-desc">Curating premium home decor that transforms your spaces into elegant sanctuaries. Quality craftsmanship meets timeless design.</p>
-                <div class="social-icons">
-                    <a href="#">📷</a>
-                    <a href="#">📘</a>
-                    <a href="#">🐦</a>
-                </div>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Shop All</a></li>
-                    <li><a href="#">Mirrors</a></li>
-                    <li><a href="#">Vanity Units</a></li>
-                    <li><a href="#">Glass Decor</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Customer Service</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Get in Touch</h4>
-                <ul>
-                    <li>✉️ info@thedecorgarage.com</li>
-                    <li>📞 +91 XXXXX XXXXX</li>
-                    <li>📍 Delhi NCR, India</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>© 2024 The Decor Garage by VAAYU. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
 
-    <script>
-        // Check login status and update icon
-        const userIcon = document.getElementById('userIconImg');
-        const userIconLink = document.getElementById('userIcon');
-        
-        function updateUserIcon() {
-            if (localStorage.getItem('isLoggedIn') === 'true') {
-                userIcon.setAttribute('src', 'images/Log out.png');
-                userIcon.setAttribute('alt', 'Logout');
-                userIconLink.setAttribute('title', 'Logout');
-            } else {
-                userIcon.setAttribute('src', 'images/Log in.png');
-                userIcon.setAttribute('alt', 'Login');
-                userIconLink.setAttribute('title', 'Login');
-            }
-        }
-        
-        userIconLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            if (localStorage.getItem('isLoggedIn') === 'true') {
-                localStorage.setItem('isLoggedIn', 'false');
-                alert('You have been logged out successfully!');
-            } else {
-                localStorage.setItem('isLoggedIn', 'true');
-                alert('You have been logged in successfully!');
-            }
-            
-            updateUserIcon();
-        });
-        
-        updateUserIcon();
-    </script>
+    <!-- Load components -->
+    <script src="js/components.js"></script>
 </body>
 </html>
