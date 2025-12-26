@@ -145,6 +145,11 @@
     color: #25D366;
 }
 
+.instagram-icon {
+    background: rgba(225, 48, 108, 0.15);
+    color: #E1306C;
+}
+
 .info-card h3 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
