@@ -18,6 +18,7 @@
     letter-spacing: 4px;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    text-transform: uppercase;
 }
 
 .about-hero .hero-title {
@@ -111,6 +112,7 @@
     letter-spacing: 3px;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .values-section .section-title {
@@ -177,19 +179,53 @@
     .values-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .about-hero .hero-title {
+        font-size: 3rem;
+    }
+    
+    .values-section .section-title {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .about-hero {
+        padding: 4rem 5% 3rem;
+    }
+    
     .about-hero .hero-title {
         font-size: 2.5rem;
+    }
+    
+    .about-hero .hero-description {
+        font-size: 1rem;
     }
 
     .stats-grid,
     .values-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .vision-text h2 {
         font-size: 2rem;
+    }
+    
+    .values-section {
+        padding: 4rem 5%;
+    }
+    
+    .values-section .section-title {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .stat-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .stat-card h3 {
+        font-size: 2.5rem;
     }
 }
