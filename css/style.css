@@ -798,3 +798,204 @@ body {
         flex-direction: column;
     }
 }
+
+
+/* Page Load Animations */
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide in from left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animations to elements */
+
+/* Navigation fades in quickly */
+.navbar {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Logo slides in from left */
+.logo {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+/* Nav menu items fade in with delay */
+.nav-menu {
+    animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+/* Nav icons slide in from right */
+.nav-icons {
+    animation: slideInRight 0.8s ease-out 0.2s backwards;
+}
+
+/* Hero subtitle fades in first */
+.hero-subtitle {
+    animation: fadeIn 0.8s ease-out 0.3s backwards;
+}
+
+/* Hero title slides up */
+.hero-title {
+    animation: slideUp 1s ease-out 0.5s backwards;
+}
+
+/* Hero description slides up with delay */
+.hero-description {
+    animation: slideUp 1s ease-out 0.7s backwards;
+}
+
+/* Hero buttons slide up last */
+.hero-buttons {
+    animation: slideUp 1s ease-out 0.9s backwards;
+}
+
+/* Features section */
+.feature-card {
+    animation: slideUp 0.8s ease-out backwards;
+}
+
+.feature-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Section titles */
+.section-subtitle {
+    animation: fadeIn 0.8s ease-out backwards;
+}
+
+.section-title {
+    animation: slideUp 0.8s ease-out 0.2s backwards;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* Scroll animations */
+.category-card,
+.product-card,
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.category-card.animate-in,
+.product-card.animate-in,
+.testimonial-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation delays for grid items */
+.product-card:nth-child(1) { transition-delay: 0.1s; }
+.product-card:nth-child(2) { transition-delay: 0.2s; }
+.product-card:nth-child(3) { transition-delay: 0.3s; }
+.product-card:nth-child(4) { transition-delay: 0.4s; }
+
+.category-card:nth-child(1) { transition-delay: 0.1s; }
+.category-card:nth-child(2) { transition-delay: 0.2s; }
+.category-card:nth-child(3) { transition-delay: 0.3s; }
+
+.testimonial-card:nth-child(1) { transition-delay: 0.1s; }
+.testimonial-card:nth-child(2) { transition-delay: 0.2s; }
+.testimonial-card:nth-child(3) { transition-delay: 0.3s; }
+
+
+
+/* Enhanced hover animations */
+.nav-menu a {
+    transition: all 0.3s ease;
+}
+
+.category-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.product-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Smooth image loading */
+img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+img:not([src]) {
+    opacity: 0;
+}
+
+

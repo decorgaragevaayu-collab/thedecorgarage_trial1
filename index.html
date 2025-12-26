@@ -278,5 +278,33 @@
         updateUserIcon();
         </script>
 
+
+<script>
+    // Scroll animation observer
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+            }
+        });
+    }, observerOptions);
+    
+    // Observe elements that should animate on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select elements to animate on scroll
+        const animateOnScroll = document.querySelectorAll('.category-card, .product-card, .testimonial-card');
+        
+        animateOnScroll.forEach(el => {
+            observer.observe(el);
+        });
+    });
+    </script>
+
+
 </body>
 </html>
