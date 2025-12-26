@@ -1,9 +1,16 @@
 /* Contact Page Specific Styles */
 
 /* Contact Hero */
+.contact-hero {
+    background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
+    padding: 5rem 5% 4rem;
+    text-align: center;
+}
+
 .contact-hero-content {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .contact-hero .hero-subtitle {
@@ -12,7 +19,6 @@
     letter-spacing: 4px;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    text-align: center;
 }
 
 .contact-hero .hero-title {
@@ -21,14 +27,12 @@
     margin-bottom: 1.5rem;
     color: var(--text-dark);
     font-family: Georgia, serif;
-    text-align: center;
 }
 
 .contact-hero .hero-description {
     font-size: 1.1rem;
     color: var(--text-gray);
     line-height: 1.8;
-    text-align: center;
 }
 
 /* Free Consultation Banner */
