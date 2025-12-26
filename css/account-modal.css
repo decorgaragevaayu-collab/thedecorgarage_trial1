@@ -141,6 +141,7 @@
     border-radius: 8px;
     font-size: 0.95rem;
     transition: all 0.3s;
+    box-sizing: border-box;
 }
 
 .form-group input:focus {
@@ -283,10 +284,10 @@
     overflow: hidden;
 }
 
-.user-avatar img {
+.user-avatar svg {
     width: 50%;
     height: 50%;
-    object-fit: contain;
+    color: var(--primary-gold);
 }
 
 .user-profile h3 {
