@@ -1,5 +1,17 @@
 /* Contact Page Specific Styles */
 
+/* Force center alignment for hero section */
+.contact-hero {
+    background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
+    padding: 5rem 5% 4rem;
+}
+
+.contact-hero * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 /* Contact Hero */
 .contact-hero {
     background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
