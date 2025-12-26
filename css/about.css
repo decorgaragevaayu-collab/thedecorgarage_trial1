@@ -4,7 +4,13 @@
 .about-hero {
     background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
     padding: 5rem 5% 4rem;
-    text-align: center;
+}
+
+/* Force center alignment for about hero section */
+.about-hero * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .about-hero-content {
@@ -99,11 +105,17 @@
     font-weight: 500;
 }
 
-/* Values Section */
+/* Values Section - White background to distinguish from footer */
 .values-section {
     padding: 6rem 5%;
-    background: var(--light-cream);
-    text-align: center;
+    background: var(--white);
+}
+
+/* Force center alignment for values section */
+.values-section * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .values-section .section-subtitle {
@@ -132,7 +144,7 @@
 }
 
 .value-card {
-    background: var(--white);
+    background: var(--light-cream);
     padding: 3rem 2rem;
     border-radius: 12px;
     text-align: center;
@@ -167,6 +179,11 @@
     color: var(--text-gray);
     line-height: 1.7;
     font-size: 0.95rem;
+}
+
+/* Add spacing before footer to create visual separation */
+.values-section {
+    margin-bottom: 0;
 }
 
 /* Responsive */
