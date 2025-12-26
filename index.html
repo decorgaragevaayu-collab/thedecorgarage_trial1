@@ -27,6 +27,9 @@
                 <a href="#" class="icon"><img src="images/Search.png" alt="Search"></a>
                 <a href="#" class="icon"><img src="images/Heart.png" alt="Wishlist"></a>
                 <a href="#" class="icon"><img src="images/Shopping cart.png" alt="Cart"></a>
+                <a href="#" class="icon icon-user" id="userIcon">
+                    <img src="images/Log in.png" alt="Login" id="userIconImg">
+                </a>
             </div>
         </div>
     </nav>
@@ -234,5 +237,46 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Check login status and update icon
+        const userIcon = document.getElementById('userIconImg');
+        const userIconLink = document.getElementById('userIcon');
+        
+        function updateUserIcon() {
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                // User is logged in - show logout icon
+                userIcon.setAttribute('src', 'images/Log out.png');
+                userIcon.setAttribute('alt', 'Logout');
+                userIconLink.setAttribute('title', 'Logout');
+            } else {
+                // User is logged out - show login icon
+                userIcon.setAttribute('src', 'images/Log in.png');
+                userIcon.setAttribute('alt', 'Login');
+                userIconLink.setAttribute('title', 'Login');
+            }
+        }
+        
+        // Toggle login/logout on click
+        userIconLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                // Log out
+                localStorage.setItem('isLoggedIn', 'false');
+                alert('You have been logged out successfully!');
+            } else {
+                // Log in
+                localStorage.setItem('isLoggedIn', 'true');
+                alert('You have been logged in successfully!');
+            }
+            
+            updateUserIcon();
+        });
+        
+        // Initialize on page load
+        updateUserIcon();
+        </script>
+
 </body>
 </html>
