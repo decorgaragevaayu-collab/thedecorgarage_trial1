@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - The Decor Garage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/account-modal.css">
+</head>
+<body>
+    <!-- Navigation Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+        <div class="shop-hero-content">
+            <h1 class="shop-title">All Products</h1>
+            <p class="shop-subtitle">6 products</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="shop-container">
+            <!-- Sidebar -->
+            <aside class="shop-sidebar">
+                <div class="sidebar-section">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#" class="active">All Products</a></li>
+                        <li><a href="#">Mirrors</a></li>
+                        <li><a href="#">Vanity Units</a></li>
+                        <li><a href="#">Glass Decor</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Price Range</h3>
+                    <ul class="price-list">
+                        <li><label><input type="checkbox"> Under ₹10,000</label></li>
+                        <li><label><input type="checkbox"> ₹10,000 - ₹50,000</label></li>
+                        <li><label><input type="checkbox"> ₹50,000 - ₹1,00,000</label></li>
+                        <li><label><input type="checkbox"> Above ₹1,00,000</label></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-section">
+                <div class="products-header">
+                    <div class="view-options">
+                        <button class="view-btn grid-view active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                            </svg>
+                        </button>
+                        <button class="view-btn list-view">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="8" y1="6" x2="21" y2="6"/>
+                                <line x1="8" y1="12" x2="21" y2="12"/>
+                                <line x1="8" y1="18" x2="21" y2="18"/>
+                                <line x1="3" y1="6" x2="3.01" y2="6"/>
+                                <line x1="3" y1="12" x2="3.01" y2="12"/>
+                                <line x1="3" y1="18" x2="3.01" y2="18"/>
+                            </svg>
+                        </button>
+                        <button class="view-btn filter-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="sort-options">
+                        <select id="sortSelect">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1: Arch Mirror Gold -->
+                    <div class="product-card" data-product-id="arc-001">
+                        <span class="badge bestseller">BESTSELLER</span>
+                        <div class="product-image">
+                            <img src="images/products/TDG-ARC-001_IMG1.jpg" alt="Aurelia Arch Mirror" class="main-image">
+                            <img src="images/products/TDG-ARC-001_IMG2.jpg" alt="Aurelia Arch Mirror" class="hover-image">
+                            <button class="wishlist-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Aurelia Arch Mirror</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="reviews">(124)</span>
+                            </div>
+                            <p class="product-price">
+                                ₹8,999
+                                <span class="original-price">₹12,999</span>
+                            </p>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Capsule Mirror Black -->
+                    <div class="product-card" data-product-id="cap-001">
+                        <span class="badge new">NEW</span>
+                        <div class="product-image">
+                            <img src="images/products/TDG-CAP-001_IMG1.jpg" alt="Capsule Elegance Mirror" class="main-image">
+                            <img src="images/products/TDG-CAP-001_IMG2.jpg" alt="Capsule Elegance Mirror" class="hover-image">
+                            <button class="wishlist-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Capsule Elegance Mirror</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="reviews">(87)</span>
+                            </div>
+                            <p class="product-price">₹6,499</p>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: LED Arch Mirror -->
+                    <div class="product-card" data-product-id="led-arc-001">
+                        <span class="badge sale">SALE</span>
+                        <div class="product-image">
+                            <img src="images/products/TDG-LED-ARC-001_IMG1.jpg" alt="LED Arch Mirror Premium" class="main-image">
+                            <img src="images/products/TDG-LED-ARC-001_IMG2.jpg" alt="LED Arch Mirror Premium" class="hover-image">
+                            <button class="wishlist-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">LED Arch Mirror Premium</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="reviews">(203)</span>
+                            </div>
+                            <p class="product-price">
+                                ₹13,999
+                                <span class="original-price">₹18,999</span>
+                            </p>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder products for a fuller look -->
+                    <div class="product-card coming-soon">
+                        <div class="product-image">
+                            <div class="coming-soon-overlay">
+                                <h3>Coming Soon</h3>
+                                <p>More products arriving</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card coming-soon">
+                        <div class="product-image">
+                            <div class="coming-soon-overlay">
+                                <h3>Coming Soon</h3>
+                                <p>More products arriving</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card coming-soon">
+                        <div class="product-image">
+                            <div class="coming-soon-overlay">
+                                <h3>Coming Soon</h3>
+                                <p>More products arriving</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load components -->
+    <script src="js/components.js"></script>
+
+    <!-- Shop page scripts -->
+    <script>
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('.product-name').textContent;
+                alert(`${productName} added to cart!`);
+            });
+        });
+
+        // Wishlist functionality
+        document.querySelectorAll('.wishlist-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('.product-name').textContent;
+                if (this.classList.contains('active')) {
+                    alert(`${productName} added to wishlist!`);
+                } else {
+                    alert(`${productName} removed from wishlist!`);
+                }
+            });
+        });
+
+        // View toggle
+        const gridViewBtn = document.querySelector('.grid-view');
+        const listViewBtn = document.querySelector('.list-view');
+        const productsGrid = document.querySelector('.products-grid');
+
+        gridViewBtn.addEventListener('click', function() {
+            productsGrid.classList.remove('list-layout');
+            gridViewBtn.classList.add('active');
+            listViewBtn.classList.remove('active');
+        });
+
+        listViewBtn.addEventListener('click', function() {
+            productsGrid.classList.add('list-layout');
+            listViewBtn.classList.add('active');
+            gridViewBtn.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
